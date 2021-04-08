@@ -1,0 +1,4 @@
+// commands used to create bookind system supporting tables.
+CREATE TABLE wecare(email varchar(25) primary key,password varchar(20),mobile varchar(15))
+CREATE TABLE booking(email varchar(25) primary key,date varchar(10))
+CREATE TABLE admins(email varchar(25) primary key,password varchar(20))
