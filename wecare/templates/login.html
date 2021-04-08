@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="centered "  >
+    <div class="card" style="height: 28rem; width:30rem ;">
+        <div class="card-body" >
+    <form method="POST" action="/login" > 
+        <h2 class="card-title" style="text-align: center;">Login</h2><br>
+        <label>Email</label><br>
+        <input class="form-control" type="text" name="email"  autofocus="" required><br>
+           
+        <label>Password</label><br>
+        <input class="form-control" type="password" name="password"  required><br>
+        <br>
+       
+       <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+        <p class="mt-2">Not A Member?<a href="/register"> Register</a></p>
+    </form>
+    
+</div>
+</div>
+{% endblock %}

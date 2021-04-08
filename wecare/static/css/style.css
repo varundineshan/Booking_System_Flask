@@ -1,0 +1,38 @@
+.bg-nav{
+   
+  background-image: url('/static/images/teddy.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+
+  .contr{ 
+    height: 30rem;
+    margin-top: 5%;
+    background: rgba(87, 81, 65, 0.9);
+    
+    
+  }
+  
+  .table {
+    padding: 0px;
+}
+
+td{
+  color: black;
+}
+th{
+  background-color: rgba(42, 165, 58, 0.411);
+}
+
+td:hover {background-color: #7a6969;}
+h3{
+  background-color: rgb(214, 21, 21);
+}

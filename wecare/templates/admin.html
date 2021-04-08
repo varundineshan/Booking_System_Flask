@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="contr">
+<h3>List Of Registered Users:</h3><br>
+<table class="table table-hover table-sm ">
+    <thead>
+        <tr>
+          <th scope="col">Email</th>
+          </tr>
+          </thead>
+{% for each in data %}
+<tbody>
+<tr>
+    <td>{{each[0]}}</td>
+</tr>
+
+{% endfor %}    
+</tbody>
+</table>
+
+<h3>Booking Details:</h3><br>
+<table class="table table-hover table-sm ">
+    <thead>
+        <tr>
+          <th scope="col">Email</th>
+          <th scope="col">Booked Date</th>
+        </tr>
+      </thead>
+{% for book in booked %} 
+    <tbody>
+    <tr>
+        <td>{{book[0]}}</td>
+        <td>{{book[1]}}</td>
+    </tr>
+    
+    
+{% endfor %} 
+</tbody>
+</table>
+</div>
+{% endblock %}
